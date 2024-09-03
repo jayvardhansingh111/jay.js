@@ -95,14 +95,14 @@ let myDate=new Date()
 
 let myCreatedDate=new Date(2024,8,2,5,4)
 let mycreatedDate=new Date("01-1-24")
-// console.log(myCreatedDate.toDateString());
-// console.log(mycreatedDate.toLocaleDateString());
+console.log(myCreatedDate.toDateString());
+console.log(mycreatedDate.toLocaleDateString());
 
-// let myTime= Date.now()
-// console.log(myTime);
-// console.log(myCreatedDate.getTime());
+let myTime= Date.now()
+console.log(myTime);
+console.log(myCreatedDate.getTime());
 
-// console.log(Math.round(Date.now()/1000));       // avoid it
+console.log(Math.round(Date.now()/1000));       // avoid it
 
 let newDate=new Date()
 console.log(newDate);
