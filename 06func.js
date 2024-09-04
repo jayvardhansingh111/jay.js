@@ -157,5 +157,48 @@ const user={
 
 
 
+// // function -> this doesnt work ok function
+// function jay(){
+//   let username="harry"
+//    console.log(this)
+//   email:"jay@123.com" 
+//   return 
+//                                            //  unable to understande this part
+// }
+// console.log(jay);
+
+// const chai=function(){
+//   username:"jay"
+//   console.log(this);
+//   return
+// }
+// console.log(chai);
+
+
+
+// Arrow function
+
+const Addtwo=(num1,num2) => {
+  return num1+num2
+}
+console.log(Addtwo(5,6));
+
+const addTwo=(num1,num2)=>(num1+num2)
+console.log(addTwo(3,4));
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
