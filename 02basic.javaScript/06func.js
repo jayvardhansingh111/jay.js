@@ -47,11 +47,11 @@ function calculateCartPrice(...num1) {   // the triple dot are sepred/convert th
 
   //  // how to pass object in function
 
-const user={         
-    dress:"tshirt",
-    price:199,
-    quant:2
-}
+// const user={         
+//     dress:"tshirt",
+//     price:199,
+//     quant:2
+// }
 // console.log(user);
 
 // function calculatePrice(now){
@@ -178,16 +178,27 @@ const user={
 
 // Arrow function
 
-const Addtwo=(num1,num2) => {
-  return num1+num2
-}
-console.log(Addtwo(5,6));
+// const Addtwo=(num1,num2) => {
+//   return num1+num2
+// }
+// console.log(Addtwo(5,6));
 
-const addTwo=(num1,num2)=>(num1+num2)
-console.log(addTwo(3,4));
+// const addTwo=(num1,num2)=>(num1+num2)
+// console.log(addTwo(3,4));
 
 
 
+//************************     IIFE              **************************************
+//use for call the function immediately
+
+ ( function tom() {
+  username="jack"
+
+   email="jack@12gmail.com"
+   contact="by mail"
+  console.log(username,email);
+  
+})();
 
 
 
