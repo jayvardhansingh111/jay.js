@@ -244,32 +244,81 @@
 
 // console.log(newnum);
 
+// basic filter use 
+
+const booksCollection=[
+    {title:'M1',genre:'algebric',publish:2003,edition:1950},
+    {title:'M2',genre:'differential',publish:1850,edition:2000},
+    {title:'PS',genre:'probility',publish:1920,edition:2020},
+    {title:'M4',genre:'algebric',publish:2000,edition:1999},
+    {title:'AI',genre:'Deep learning',publish:1980,edition:2014},
+    {title:'DS',genre:'DBMS',publish:1720,edition:1920},
+
+]
+
+
+// const newbook=booksCollection.filter((bc)=>bc.edition<=2000)
+// // console.log(newbook);
+
+// let newBook=booksCollection.filter((bc)=>{return bc.publish>=2000})
+// // console.log(newBook);
+
+// newBook=booksCollection.filter((bc)=>{return bc.genre==='probility'|| bc.edition==2014})
+// console.log(newBook);
+
+// newBook=booksCollection.filter((bc)=>{return bc.genre==='probility'&& bc.edition==2014})
+// console.log(newBook);             // and operator doesn`t provide value if any ststement wrong
+
+
+// ((((((((()))))))))          Map
+
+const myarr=[1,2,3,4,5,6]
+// newarr=myarr.map((num)=>num+1)
+// console.log(newarr);
+
+// let newArr=myarr.map((num)=>{return num*10})
+// console.log(newArr);
+
+// const Newarr=myarr
+//                 .map((num)=>num+2)
+//                 .map((num)=>num*10)
+//                 .filter((num)=>num>=40)
+// console.log(Newarr);
+
+
+// ((((((((((((((((   reduce method    ))))))))))))))))
+// use for add the values in array
+// const myvalue=myarr.reduce(function(accumaletor,currentvalue){
+//     console.log(`accumaletor: ${accumaletor} and current value: ${currentvalue} added value is: ${accumaletor+currentvalue}`);
+//     return accumaletor+currentvalue
+// },10)
+// console.log(myvalue);
 
 
 
+const shoppingcart=[
+    { 
+        item:"tshirt",
+        price:299
+    },
+    { 
+        item:"cap",
+        price:99
+    },
+    { 
+        item:"fog",
+        price:700
+    },
+    { 
+        item:"shorts",
+        price:399
+    },
+]
 
+const topay=shoppingcart.reduce((acc,item)=>acc+item.price,0)
+console.log(topay);
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+console.log(shoppingcart.filter((val)=>val.item==='tshirt'))
 
 
 
