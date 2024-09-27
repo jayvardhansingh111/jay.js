@@ -1,0 +1,46 @@
+<!-- // bind key word -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>React base</title>
+  </head>
+  <body>
+    <div>
+      <button>button click</button>
+    </div>
+  </body>
+  <script>
+    class React {
+      constructor() {
+        this.library = "React";
+        this.server = "https:--.com";
+
+        document
+          .querySelector("button")
+          .addEventListener("click", this.handleClick.bind(this));
+      } // bind keyword =>use to bind element
+
+      handleClick() {
+        console.log("button click");
+        console.log(this);
+      }
+    }
+    const js = new React();
+
+    const outer = "out from the function";
+    function out() {
+      let name = "Gabbar";
+      function iner() {
+        console.log(name);
+      }
+      iner();
+      console.log(name);
+    }
+    out();
+    console.log(name);
+    console.log(outer);
+  </script>
+</html>

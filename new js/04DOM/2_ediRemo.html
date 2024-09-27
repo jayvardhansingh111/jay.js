@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Edit and REmove || Dom</title>
+    <style>
+      body {
+        background-color: #212121;
+        color: #00ffff;
+      }
+    </style>
+  </head>
+  <body>
+    <ul>
+      <li>Javascript</li>
+    </ul>
+  </body>
+  <script>
+    function addlanguage(langName) {
+      const li = document.createElement("li");
+      document.querySelector(".language").appendChild(li);
+    }
+    addlanguage("python");
+
+    function addOptiLanguage(langName) {
+      const li = document.createElement("li");
+      li.appendChild(document.createTextNode(langName));
+      document.querySelector(".language").appendChild(li);
+    }
+    addOptiLanguage(java);
+  </script>
+</html>

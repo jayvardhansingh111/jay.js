@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Events</title>
+  </head>
+  <body>
+    <h1>A place for walking</h1>
+    <button id="stop">stop</button>
+  </body>
+  <script>
+    setTimeout(function () {
+      console.log("jack");
+    }, 2000);
+
+    const sayhi = function () {
+      console.log("hiiiii");
+    };
+    setTimeout(sayhi, 2000);
+
+    document.querySelector("h1").innerHTML = "beatiful place";
+    const changetaxt = function () {
+      document.querySelector("h1").innerHTML = "But it is so far";
+      //   console.log(changetaxt);
+    };
+    setTimeout(changetaxt, 2000);
+
+    const timeis = setTimeout(changetaxt, 2000);
+
+    clearTimeout(timeis);
+
+    document.querySelector("#stop").addEventListener("click", function () {
+      clearTimeout(timeis);
+      console.log("stopped");
+    });
+  </script>
+</html>

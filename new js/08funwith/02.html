@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Scoping</title>
+  </head>
+  <body>
+    <div>
+      <button id="green">green</button>
+      <button id="blue">blue</button>
+    <div>
+
+  </body>
+  <script>
+    // const doc=document.querySelector('#green');
+    // doc.addEventListener('click',function (e) {
+    //     document.body.style.backgroundColor="green"
+    // });
+    // console.log(doc);
+    
+    // const Doc=document.querySelector('#blue');
+    // Doc.addEventListener('click',function (e) {
+    //     document.body.style.backgroundColor="blue"
+    // });
+    
+
+    function clickHandler(color) {
+        // document.body.style.backgroundColor=`${color}`
+        return function(){
+            document.body.style.backgroundColor=`${color}`
+        }
+    }
+    document.getElementById('green').onclick=clickHandler("green");
+    document.getElementById('blue').onclick=clickHandler('red');
+    // document.getElementById('green').onclick=clickHandler('blue');
+    // document.getElementById('blue').onclick=clickHandler('yellow');
+
+  </script>
+</html>
