@@ -36,7 +36,7 @@ let value=3
 // console.log(2*3)
 // console.log(2**3)  // ** its means is pawer
 // console.log(2%2)
-// console.log(2/2)
+console.log(2/2)
 
 // let string1="Hii"
 // let string2=" jay"
